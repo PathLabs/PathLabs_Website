@@ -678,6 +678,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: table;
   overflow: hidden;
   margin-bottom: 30px;
+  border: 5px solid pink;
+  border-radius: 3%;
 }
 
 #portfolio .portfolio-item .details {
