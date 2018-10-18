@@ -732,7 +732,19 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
 
+#design .flowchart{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 3%;
+    transition: all .2s ease-in-out;
+}
+
+#design .flowchart:hover{
+    transform: scale(1.05);
 }
 
 
