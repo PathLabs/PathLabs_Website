@@ -19,7 +19,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #03c5ec;
+  color: #f74545;
   outline: none;
   text-decoration: none;
 }
@@ -725,13 +725,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #design {
   background: #f6f6f6;
   padding: 80px 0;
-}
-
-#design .flowchart {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
 }
 
 #design .flowchart{
