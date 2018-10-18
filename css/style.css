@@ -19,7 +19,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #03c5ec;
+  color: #f74545;
   outline: none;
   text-decoration: none;
 }
@@ -544,14 +544,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
-#about .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 200px;
+#about img {
+  height:inherit;
+  max-width: 100%;
+  border-radius: 3%;
 }
 
-#about .member .pic img {
-  max-width: 100%;
+#about .member .pic {
+  margin-bottom: 15px;
+  overflow:hidden;
+  height: 200px;
+  border-radius: 3%;
 }
 
 #about .member h4 {
@@ -675,6 +678,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: table;
   overflow: hidden;
   margin-bottom: 30px;
+  border: 5px solid pink;
+  border-radius: 3%;
 }
 
 #portfolio .portfolio-item .details {
@@ -722,12 +727,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0;
 }
 
-#design .flowchart {
+#design .flowchart{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border-radius: 3%;
+    transition: all .2s ease-in-out;
+}
 
+#design .flowchart:hover{
+    transform: scale(1.05);
 }
 
 
@@ -753,12 +763,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member .pic {
   margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
+  border-radius: 3%;
+  overflow:auto;
 }
 
 #team .member .pic img {
   max-width: 100%;
+  display:inline-flex;
 }
 
 #team .member h4 {
