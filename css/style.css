@@ -15,6 +15,8 @@ body {
 
 a {
   color: #F38F8F;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -59,6 +61,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
   right: 15px;
   bottom: 15px;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
   transition: background 0.5s;
 }
 
@@ -158,6 +162,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 2px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
 }
@@ -188,6 +194,8 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.70), black);
+  background-image: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.70), black);
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.70), black);
   padding: 20px 0;
   height: 90px;
@@ -325,7 +333,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul {
   margin: 4px 0 0 15px;
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
 }
 
 .nav-menu ul li {
@@ -360,6 +369,8 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   font-size: 24px;
   display: none;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
   outline: none;
 }
@@ -385,6 +396,8 @@ h1, h2, h3, h4, h5, h6 {
   left: -260px;
   width: 260px;
   overflow-y: auto;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -581,6 +594,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../assets/images/services-bg.jpg") fixed center center;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../assets/images/services-bg.jpg") fixed center center;
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../assets/images/services-bg.jpg") fixed center center;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../assets/images/services-bg.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
@@ -595,6 +611,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #F38F8F;
   padding: 16px;
   border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid #F38F8F;
 }
@@ -631,6 +649,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Subscribe Section
 --------------------------------*/
 #subscribe {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/subscribe-bg.jpg) fixed center center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe-bg.jpg) fixed center center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe-bg.jpg) fixed center center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe-bg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
@@ -660,6 +681,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 2px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
@@ -698,14 +721,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: table-cell;
   vertical-align: middle;
   opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   text-align: center;
 }
 
 #portfolio .portfolio-item .details h4 {
   font-size: 16px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
-  transform: translate3d(0, -15px, 0);
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate3d(0, -15px, 0);
+          transform: translate3d(0, -15px, 0);
   font-weight: 700;
   color: #333333;
 }
@@ -714,8 +744,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   color: #666666;
   font-size: 13px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
-  transform: translate3d(0, 15px, 0);
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate3d(0, 15px, 0);
+          transform: translate3d(0, 15px, 0);
 }
 
 #portfolio .portfolio-item:hover .details {
@@ -723,11 +758,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-item:hover .details h4 {
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 #portfolio .portfolio-item:hover .details span {
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 /* Design Section
@@ -743,11 +780,15 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-right: auto;
     width: 100%;
     border-radius: 3%;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 #design .flowchart:hover{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 
@@ -779,6 +820,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member .pic img {
   max-width: 100%;
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
   display:inline-flex;
 }
 
@@ -866,7 +909,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form input, #contact .form textarea {
   border-radius: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #contact .form button[type="submit"] {
@@ -874,6 +918,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 0;
   padding: 10px 24px;
   color: #fff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -887,6 +933,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer {
   padding: 30px 0;
   color: #fff;
+  background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.70), black);
+  background-image: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.70), black);
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.70), black);
 }
 
