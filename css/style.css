@@ -622,14 +622,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 24px;
 }
 
-#services .service-item:hover .service-icon {
-  background: #fff;
-}
-
-#services .service-item:hover .service-icon i {
-  color: #F38F8F;
-}
-
 #services .service-title {
   margin-left: 80px;
   font-weight: 700;
