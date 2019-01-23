@@ -791,8 +791,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0;
 }
 
-#documentation div.col-md-3{
-  height: 200px;
+#documentation center{
+  height: 120px;
   overflow-y: auto;
 }
 
