@@ -119,14 +119,38 @@ jQuery(document).ready(function( $ ) {
     var items = ul.getElementsByTagName("li");
     for (var i = 0; i < items.length; ++i) {
       // do something with items[i], which is a <li> element
-      if ( window.pageYOffset > 500 && window.pageYOffset <2000) {
+      if(window.pageYOffset < 500){
+        $(items[i]).removeClass('menu-active');
+        $(items[0]).addClass('menu-active');
+      }
+      else if ( window.pageYOffset > 500 && window.pageYOffset < 2000) {
         $(items[i]).removeClass('menu-active');
         $(items[1]).addClass('menu-active');
       }
-      // else if ( window.pageYOffset < 1200) {
-      //   $(items[i]).removeClass('menu-active');
-      //   $(items[1]).addClass('menu-active');
-      // }
+      else if ( window.pageYOffset > 2000 && window.pageYOffset <2500) {
+        $(items[i]).removeClass('menu-active');
+        $(items[2]).addClass('menu-active');
+      }
+      else if ( window.pageYOffset > 2500 && window.pageYOffset <3000) {
+        $(items[i]).removeClass('menu-active');
+        $(items[3]).addClass('menu-active');
+      }
+      else if ( window.pageYOffset > 3000 && window.pageYOffset <3500) {
+        $(items[i]).removeClass('menu-active');
+        $(items[4]).addClass('menu-active');
+      }
+      else if ( window.pageYOffset > 3500 && window.pageYOffset <4000) {
+        $(items[i]).removeClass('menu-active');
+        $(items[5]).addClass('menu-active');
+      }
+      else if ( window.pageYOffset > 4000 && window.pageYOffset <4500) {
+        $(items[i]).removeClass('menu-active');
+        $(items[6]).addClass('menu-active');
+      }
+      else if ( window.pageYOffset > 4500) {
+        $(items[i]).removeClass('menu-active');
+        $(items[7]).addClass('menu-active');
+      }
     }
   });
 
