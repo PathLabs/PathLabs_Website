@@ -309,10 +309,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0;
 }
 
-#lab{
-  flex-wrap: nowrap;
-}
-
 @media (max-width: 768px) {
   #nav-menu-container {
     display: none;
