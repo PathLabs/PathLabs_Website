@@ -796,6 +796,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow-y: auto;
 }
 
+.bullets li{
+  text-align: left;
+  margin-left: 45px;
+}
+
 /* Team Section
 --------------------------------*/
 #team {
