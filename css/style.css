@@ -545,6 +545,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 28px;
 }
 
+#about .technologies-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+
 #about .about-text {
   line-height: 26px;
   margin-bottom: 15px;
@@ -590,6 +596,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   font-size: 13px;
 }
+
+.technologies img {
+  position: relative;
+  float: left;
+  width:  150px;
+  height: 150px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
 
 /* Services Section
 --------------------------------*/
